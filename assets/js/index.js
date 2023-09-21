@@ -1,7 +1,13 @@
-const toggleCollapse = ducument.querySelector ("toggle-collapse")
-const navMenu = ducument.querySelector ("nav-items")
+const BASE_URL = 'https://www.flyingtips.no/wp-json/wp/v2/posts';
 
-toggleCollapse.addEventListener("click", () => {
-    toggleCollapse.classList.toggle("active");
-    navItems.classList.toggle("active");
-})
+async function fetchData() {
+    try {
+        const response = await fetch(BASE_URL);
+        const data = await response.json();
+        console.log(data)
+        return data;
+    } catch(err) {
+        console.log(err)
+    }
+        
+  }
