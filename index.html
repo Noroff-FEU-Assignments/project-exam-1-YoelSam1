@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog page</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="https://kit.fontawesome.com/9f2ed5ce7f.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="#" class="nav-branding"><img src="/assets/img/LOGO2.png" alt="logo" class="logo"></a>
-
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FlyingTips home page. Welcome and hope the tips helps you"
+    />
+    <title>Home</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9f2ed5ce7f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- head --> 
+    <header class="header"> 
+        <nav>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon">.</span>
+          </label>
+  
+            <a href="index.html"><img src="/assets/img/LOGO2.png" alt="logo" class="logo"/></a>
+            <ul class="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/About.html">About</a></li>
+                <li><a href="/Contact.html">Contact</a></li>
             </ul>
-
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
+          </nav>
     </header>
 
+    <!-- Main --> 
     <main>
+      <div>
+        <img src="/assets/img/plan.png" alt="plan-img" class="plan-img">
+      </div>
+      <div class="Heading-text">
         <h1>Safety Tips For Flying</h1>
-        <div class="main-container">
-            
-        </div>
-    </main>
-    <script src="./assets/js/index.js" type="module"></script>
-</body>
-</html>
+        <p>Easy tips and tricks for making a long-haul flight more comfortable</p>
+        <p class="Latest-post-text">Latest Posts</p>
+      </div>
 
+      <div class="main-container"></div>
+    </main>
+    
+    <!-- Footer --> 
+    <footer>
+      <footer>
+        <div class="sosial">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+
+        <div class="text-follow">
+          <p>Follow us on social media and to stay updated for new post</p>
+        </div>
+  
+        <div class="copyright">
+          <p>&copy; 2023 - FlyingBlog-Noroff-All Right Served</p>
+        </div>
+      </footer>
+    </footer>
+    <script src="./assets/js/index.js" type="module"></script>
+  </body>
+</html>
