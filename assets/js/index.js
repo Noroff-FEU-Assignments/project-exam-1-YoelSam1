@@ -44,7 +44,7 @@ function render(data, container) {
 }
 
 async function fetchMedia(mediaId) {
-  const response = await fetch(`http://www.flyingtips.no/wp-json/wp/v2/media/${mediaId}`);
+  const response = await fetch(`https://www.flyingtips.no/wp-json/wp/v2/media/${mediaId}`);
   if (response.ok) {
     const mediaData = await response.json();
     return mediaData.source_url;
