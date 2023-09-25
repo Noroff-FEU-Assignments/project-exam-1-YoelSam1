@@ -16,7 +16,7 @@ body{
     width: 100%;
     top: 0;
     height: 80px;
-    background: rgb(68, 102, 255);
+    background: rgb(0, 47, 59);
     box-shadow: 1px 1px 4px 0 rgb(245, 0, 0);
     position: fixed;
 }
@@ -156,7 +156,7 @@ i, f{
 
     .menu-btn:checked ~ .menu {
         max-width: 100%;
-        background: rgba(68, 102, 255, 0.548);
+        background:  rgb(1, 73, 95);
         text-align: center;
     }
 
