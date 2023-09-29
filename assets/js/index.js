@@ -1,6 +1,5 @@
 const BASE_URL = "https://www.flyingtips.no/wp-json/wp/v2/posts?per_page=12";
 
-
 async function fetchData() {
   try {
     const response = await fetch(BASE_URL);
@@ -23,7 +22,7 @@ function render(data, container) {
 
   data.forEach(async (element) => {
     const { id, title, content, featured_media } = element;
-    const imageUrl = await fetchMedia(featured_media );
+    const imageUrl = await fetchMedia(featured_media);
 
     if (container) {
       container.innerHTML += `
@@ -33,7 +32,9 @@ function render(data, container) {
               </a>
               <div class="detail">
                   <h3>${title.rendered}</h3>
-                  <div>${content.rendered.split("strong")[1].slice(1,100)}...</div>
+                  <div>${content.rendered
+                    .split("strong")[1]
+                    .slice(1, 100)}...</div>
                   <br>
                 
               </div>
@@ -44,7 +45,9 @@ function render(data, container) {
 }
 
 async function fetchMedia(mediaId) {
-  const response = await fetch(`https://www.flyingtips.no/wp-json/wp/v2/media/${mediaId}`);
+  const response = await fetch(
+    `https://www.flyingtips.no/wp-json/wp/v2/media/${mediaId}`
+  );
   if (response.ok) {
     const mediaData = await response.json();
     return mediaData.source_url;
@@ -56,9 +59,7 @@ async function fetchMedia(mediaId) {
   }
 }
 
-
 /* slider container */
-
 
 let sliderContainer = document.querySelector(".slider-container");
 let innerSlider = document.querySelector(".inner-slider");
@@ -70,50 +71,55 @@ let x;
 innerSlider.style.left = `-1500px`;
 
 sliderContainer.addEventListener("mousedown", (e) => {
-    pressed = true;
-    startX = e.offsetX - innerSlider.offsetLeft;
-    sliderContainer.style.cursor = "grabbing";
+  pressed = true;
+  startX = e.offsetX - innerSlider.offsetLeft;
+  sliderContainer.style.cursor = "grabbing";
 });
 
 sliderContainer.addEventListener("mouseenter", () => {
-    sliderContainer.style.cursor = "grab";
+  sliderContainer.style.cursor = "grab";
 });
 
 sliderContainer.addEventListener("mouseleave", () => {
-    sliderContainer.style.cursor = "default";
+  sliderContainer.style.cursor = "default";
 });
 
 sliderContainer.addEventListener("mouseup", () => {
-    sliderContainer.style.cursor = "grab";
-    pressed = false;
+  sliderContainer.style.cursor = "grab";
+  pressed = false;
 });
 
 sliderContainer.addEventListener("mousemove", (e) => {
-    if (!pressed) return;
-    e.preventDefault();
+  if (!pressed) return;
+  e.preventDefault();
 
-    x = e.offsetX;
+  x = e.offsetX;
 
-    innerSlider.style.left = `${x - startX}px`;
+  innerSlider.style.left = `${x - startX}px`;
 
-    checkBoundary();
+  checkBoundary();
 });
 
 const checkBoundary = () => {
-    let outer = sliderContainer.getBoundingClientRect();
-    let inner = innerSlider.getBoundingClientRect();
+  let outer = sliderContainer.getBoundingClientRect();
+  let inner = innerSlider.getBoundingClientRect();
 
-    if (parseInt(innerSlider.style.left) > 0) {
-        innerSlider.style.left = "0px";
-    }
+  if (parseInt(innerSlider.style.left) > 0) {
+    innerSlider.style.left = "0px";
+  }
 
-    if (inner.right < outer.right) {
-        innerSlider.style.left = `-${inner.width - outer.width}px`;
-    }
+  if (inner.right < outer.right) {
+    innerSlider.style.left = `-${inner.width - outer.width}px`;
+  }
 };
 
+function mousedownEvent(e) {
+  pressed = true;
+  startX = e.offsetX - innerSlider.offsetLeft;
+  sliderContainer.style.cursor = "grabbing";
+}
+
+sliderContainer.addEventListener("mousedown", mousedownEvent);
+sliderContainer.addEventListener("touchstart", mousedownEvent);
+
 renderData();
-
-
-
-

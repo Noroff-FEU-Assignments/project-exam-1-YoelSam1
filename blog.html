@@ -7,7 +7,7 @@
       name="description"
       content="FlyingTips Blog list page. in this page will you find all the posted blog listed in thumbnail and when you click ok the blog it will take you to the detail page."
     />
-    <title>Blog</title>
+    <title>FlyingTips | Blog</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script
       src="https://kit.fontawesome.com/9f2ed5ce7f.js"
@@ -36,16 +36,21 @@
     </header>
 
     <!-- Main -->
-    <main >
+    <main>
       <div class="blog-title">
-       <h1>Blog page</h1>
+        <h1>Blog page</h1>
       </div>
       <div class="blog-container">
-        <div class="blogs">
-        </div>
-        <button id="loadmoreBtn">Load More <span class="loader"></span></button>
+        <div class="blogs"></div>
+        <button id="loadmoreBtn">View More <span class="loader"></span></button>
       </div>
     </main>
+
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+      <span class="close-modal" id="close-modal">&times;</span>
+      <img class="modal-content" alt="modal" />
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -64,6 +69,6 @@
         </div>
       </footer>
     </footer>
-    <script src="./assets/js/blog.js" type="module"></script>
+    <script src="./assets/js/blog2.js" type="module"></script>
   </body>
 </html>

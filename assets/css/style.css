@@ -1,358 +1,441 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Josefin+Sans:wght@100&family=Lexend+Deca:wght@100&family=Livvic:wght@100&family=Montserrat:ital,wght@0,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Josefin+Sans:wght@100&family=Lexend+Deca:wght@100&family=Livvic:wght@100&family=Montserrat:ital,wght@0,400;1,500&display=swap");
 @import "/assets/css/Meny.css"; /* meny.css*/
-
 
 /* Global classes*/
 
-h1{
-    margin-top: 90px;
-    margin-bottom: 25px;  
-    font-weight: bolder;
+:root {
+  --Gray-color--: #8a8a8a;
+  /* ... */
 }
 
+h1 {
+  margin-top: 90px;
+  margin-bottom: 25px;
+  font-weight: bolder;
+}
 
- 
 /* x Global classes x */
 
 /* Home page style*/
 
-.plan-img{
-    width: 100%;
-    margin-top: 0px;
+.plan-img {
+  width: 100%;
+  margin-top: 0px;
 }
 
-.Heading-text{
-    margin-top: -50px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
+.Heading-text {
+  margin-top: -50px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-.Latest-post-text{
-    margin-top: 120px;
+.Latest-post-text {
+  margin-top: 120px;
 }
 .slider-container {
-    width: 95%;
-    min-height:520px;
-    overflow: hidden;
-    position: relative;
-    margin:auto;
+  width: 95%;
+  min-height: 520px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
 }
 .inner-slider {
-    display: flex;
-    gap: 10px;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: 0;
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .card {
-    height: 500px;
-    width: 500px;
-    border-radius: 5px;
-    margin:10px;
-    display: flex;
-    flex-direction: column;
-    min-width:400px;
-    height: 500px;
+  height: 500px;
+  width: 500px;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  height: 500px;
 }
-.imgCon{
-   height:250px;
+.imgCon {
+  height: 250px;
 }
 .imgCon img {
-    width:100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .detail {
-    flex:1;
-    padding:20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap:10px;
-    color:white;
-    background-color: #8A8A8A;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  color: white;
+  background-color: var(--Gray-color--);
 }
 .readMore {
-    background-color: green;
-    color:white;    
-    padding:10px 20px;
-    border:none;
-    cursor:pointer;
-    text-decoration: none;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-
-
 /* x Ending Home page style x*/
-
 
 /* Blog page Style*/
 
 .blog-container {
-    margin:auto;
-    width:90%;
-    margin-top: 50px;
+  margin: auto;
+  width: 90%;
+  margin-top: 50px;
 }
 .blogs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .blog-title {
-    background-color: #BEBEBE;
-    padding:7px
+  background-color: var(--Gray-color--);
+  padding: 7px;
 }
 .blog-title h1 {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 #loadmoreBtn {
-    color: white;
-    width:100%;
-    padding:20px 40px;
-    font-weight: 600;
-    font-size: 25px;
-    background-color: #BEBEBE;
-    border:none;
-    margin-top: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20PX;
+  color: white;
+  width: 100%;
+  padding: 20px 40px;
+  font-weight: 600;
+  font-size: 25px;
+  background-color: #bebebe;
+  border: none;
+  margin-top: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 .loader {
-    display: none;
-    width: 48px;
-    height: 48px;
-    border: 5px solid #FFF;
-    border-bottom-color: transparent;
-    border-radius: 50%;
-    box-sizing: border-box;
-    animation: rotation 1s linear infinite;
+  display: none;
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
 }
 
 @keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-} 
-
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /* x Blog page Style x*/
 
 /* x Blog Specific page Style x*/
 
 .blog {
-    width:70%;
-    margin: auto;
+  width: 70%;
+  margin: auto;
 }
 .blog img {
-    width:100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* x Blog Specific page Style x*/
 
-
 /* x contact page Style x*/
 
 .contact-tex {
-    text-align: auto;
+  text-align: auto;
 }
 
-.text{
-    margin-left: 15%;
-    margin-right: 13%;
-    font-size: 25px;
+.text {
+  margin-left: 15%;
+  margin-right: 13%;
+  font-size: 25px;
 }
 
 .form-container {
-    width:70%;
-    margin:auto;
+  width: 70%;
+  margin: auto;
 }
 
 form {
-    width:100%;
-    background-color: #F2F3F5;
-    padding:10px;
-    display:flex;
-    flex-direction: column;
-    gap:10px;
-    font-weight: bold;
+  width: 100%;
+  background-color: #f2f3f5;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
 }
 
 form input {
-    padding:10px
+  padding: 10px;
 }
 
-.submit{
-    background-color: #448F0B;
-    color: white;
+.submit {
+  background-color: #448f0b;
+  color: white;
 }
 /* x contact page Style x*/
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
 
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 75%;
+  max-width: 75%;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.out {
+  animation-name: zoom-out;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(2);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.4);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom-out {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
 
 /* viewport less then or equal */
 
-
-@media only screen and (max-width:1733px){
-    .card {
-        width: 14rem;
-        border-radius: 5px;
-        margin:10px;
-        display: flex;
-        flex-direction: column;
-        min-width:400px;
-        height: 500px;
-    }
-    .imgCon{
-       height: 14rem;
-       width:100%;
-    }
-    .imgCon img {
-        width:100%;
-        height: 100%;
-        object-fit: cover;
-    }
+@media only screen and (max-width: 1733px) {
+  .card {
+    width: 14rem;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    height: 500px;
+  }
+  .imgCon {
+    height: 14rem;
+    width: 100%;
+    cursor: pointer;
+  }
+  .imgCon:hover {
+    opacity: 0.7;
+  }
+  .imgCon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
-@media only screen and (max-width:1399px){
-    .card {
-        width: 8rem;
-        border-radius: 5px;
-        margin:10px;
-        display: flex;
-        flex-direction: column;
-        min-width:300px;
-        height: 500px;
-    }
-    .imgCon{
-       height: 14rem;
-       width:100%;
-    }
-    .imgCon img {
-        width:100%;
-        height: 100%;
-        object-fit: cover;
-    }
+@media only screen and (max-width: 1399px) {
+  .card {
+    width: 8rem;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    height: 500px;
+  }
+  .imgCon {
+    height: 14rem;
+    width: 100%;
+  }
+  .imgCon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
-@media only screen and (max-width:1066px){
-    .card {
-        width: 8rem;
-        border-radius: 5px;
-        margin:10px;
-        display: flex;
-        flex-direction: column;
-        min-width:250px;
-        height: 500px;
-    }
-    .imgCon{
-       height: 14rem;
-       width:100%;
-    }
-    .imgCon img {
-        width:100%;
-        height: 100%;
-        object-fit: cover;
-    }
+@media only screen and (max-width: 1066px) {
+  .card {
+    width: 8rem;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    height: 500px;
+  }
+  .imgCon {
+    height: 14rem;
+    width: 100%;
+  }
+  .imgCon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
-@media only screen and (max-width:899px){
-    .card {
-        width: 8rem;
-        border-radius: 5px;
-        margin:10px;
-        display: flex;
-        flex-direction: column;
-        min-width:200px;
-        height: 500px;
-    }
-    .imgCon{
-       height: 14rem;
-       width:100%;
-    }
-    .imgCon img {
-        width:100%;
-        height: 100%;
-        object-fit: cover;
-    }
+@media only screen and (max-width: 899px) {
+  .card {
+    width: 8rem;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    height: 500px;
+  }
+  .imgCon {
+    height: 14rem;
+    width: 100%;
+  }
+  .imgCon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
-@media only screen and (max-width:733px){
-    .card {
-        width: 8rem;
-        border-radius: 5px;
-        margin:10px;
-        display: flex;
-        flex-direction: column;
-        min-width:170px;
-        height: 500px;
-    }
-    .imgCon{
-       height: 14rem;
-       width:100%;
-    }
-    .imgCon img {
-        width:100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .blog {
-        width:90%;
-    }
+@media only screen and (max-width: 733px) {
+  .card {
+    width: 8rem;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 170px;
+    height: 500px;
+  }
+  .imgCon {
+    height: 14rem;
+    width: 100%;
+  }
+  .imgCon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .blog {
+    width: 90%;
+  }
 }
 
-
-@media only screen and (max-width:633px){
-    .card {
-        width: 100%;
-
-    }
-    .imgCon{
-
-    }
-    .imgCon img {
-
-
-    }
+@media only screen and (max-width: 633px) {
+  .card {
+    width: 100%;
+  }
+  .imgCon {
+  }
+  .imgCon img {
+  }
 }
 
-@media only screen and (max-width:943px){
-    
-    .Heading-text{
-        margin-top: -50px;
-        text-align: center;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    
-    .Latest-post-text{
-        margin-top: 100px;
-    }
+@media only screen and (max-width: 943px) {
+  .Heading-text {
+    margin-top: -50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
 
-
+  .Latest-post-text {
+    margin-top: 100px;
+  }
 }
 
-
-@media only screen and (max-width:750px) {
-    
-    .Heading-text{
-        margin-top: -50px;
-        text-align: center;
-        font-size: 15px;
-        font-weight: bold;
-    }
+@media only screen and (max-width: 750px) {
+  .Heading-text {
+    margin-top: -50px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+  }
 }
-
 
 /* x viewport less then or equal  x */
