@@ -3,11 +3,6 @@
 
 /* Global classes*/
 
-:root {
-  --Gray-color--: #8a8a8a;
-  /* ... */
-}
-
 h1 {
   margin-top: 90px;
   margin-bottom: 25px;
@@ -43,6 +38,7 @@ h1 {
 .inner-slider {
   display: flex;
   gap: 10px;
+  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -75,7 +71,7 @@ h1 {
   justify-content: space-between;
   gap: 10px;
   color: white;
-  background-color: var(--Gray-color--);
+  background-color: #8a8a8a;
 }
 .readMore {
   background-color: green;
@@ -101,7 +97,7 @@ h1 {
   justify-content: space-between;
 }
 .blog-title {
-  background-color: var(--Gray-color--);
+  background-color: #bebebe;
   padding: 7px;
 }
 .blog-title h1 {
@@ -195,102 +191,18 @@ form input {
 }
 /* x contact page Style x*/
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 99; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
-}
+/* x About page Style x*/
 
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 75%;
-  max-width: 75%;
-}
-
-/* Add Animation */
-.modal-content,
-#caption {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-.out {
-  animation-name: zoom-out;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(2);
-  }
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0.4);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-@keyframes zoom-out {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0);
-  }
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
+.bold-text {
   font-weight: bold;
-  transition: 0.3s;
 }
-.close-modal {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
+.p-text {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 24px;
 }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
-  }
-}
+/* x About page Style x*/
 
 /* viewport less then or equal */
 
@@ -307,10 +219,6 @@ form input {
   .imgCon {
     height: 14rem;
     width: 100%;
-    cursor: pointer;
-  }
-  .imgCon:hover {
-    opacity: 0.7;
   }
   .imgCon img {
     width: 100%;
@@ -410,9 +318,9 @@ form input {
   .card {
     width: 100%;
   }
-  .imgCon {
-  }
-  .imgCon img {
+
+  .p-text {
+    font-size: 18px;
   }
 }
 
@@ -426,6 +334,10 @@ form input {
 
   .Latest-post-text {
     margin-top: 100px;
+  }
+
+  .p-text {
+    font-size: 23px;
   }
 }
 
