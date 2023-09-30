@@ -122,4 +122,4 @@ function mousedownEvent(e) {
 }
 
 sliderContainer.addEventListener("mousedown", mousedownEvent);
-sliderContainer.addEventListener("touchstart", (e) => mousedownEvent);
+sliderContainer.addEventListener("touchstart", mousedownEvent);

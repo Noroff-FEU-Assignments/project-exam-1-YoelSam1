@@ -191,6 +191,19 @@ form input {
 }
 /* x contact page Style x*/
 
+/* x About page Style x*/
+
+.bold-text {
+  font-weight: bold;
+}
+.p-text {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 24px;
+}
+
+/* x About page Style x*/
+
 /* viewport less then or equal */
 
 @media only screen and (max-width: 1733px) {
@@ -305,9 +318,9 @@ form input {
   .card {
     width: 100%;
   }
-  .imgCon {
-  }
-  .imgCon img {
+
+  .p-text {
+    font-size: 18px;
   }
 }
 
@@ -322,6 +335,10 @@ form input {
   .Latest-post-text {
     margin-top: 100px;
   }
+
+  .p-text {
+    font-size: 23px;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -334,12 +351,3 @@ form input {
 }
 
 /* x viewport less then or equal  x */
-
-.slider-container {
-  scroll-snap-type: x mandatory;
-  scroll-padding: 0 24px;
-}
-
-.slider-container .inner-slider {
-  scroll-snap-align: start;
-}
