@@ -114,3 +114,12 @@ const checkBoundary = () => {
 };
 
 renderData();
+
+function mousedownEvent(e) {
+  pressed = true;
+  startX = e.offsetX - innerSlider.offsetLeft;
+  sliderContainer.style.cursor = "grabbing";
+}
+
+sliderContainer.addEventListener("mousedown", mousedownEvent);
+sliderContainer.addEventListener("touchstart", (e) => mousedownEvent);

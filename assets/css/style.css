@@ -334,3 +334,12 @@ form input {
 }
 
 /* x viewport less then or equal  x */
+
+.slider-container {
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 24px;
+}
+
+.slider-container .inner-slider {
+  scroll-snap-align: start;
+}
