@@ -27,7 +27,7 @@ function render(data, container) {
     if (container) {
       container.innerHTML += `
             <div class="card">
-              <a product_id="${id}" class="imgCon"  href='blogspecific.html?id=${id}'>
+              <a product_id="${id}" class="imgCon">
                   <img src="${imageUrl}" alt="" /> 
               </a>
               <div class="detail">
@@ -112,14 +112,5 @@ const checkBoundary = () => {
     innerSlider.style.left = `-${inner.width - outer.width}px`;
   }
 };
-
-function mousedownEvent(e) {
-  pressed = true;
-  startX = e.offsetX - innerSlider.offsetLeft;
-  sliderContainer.style.cursor = "grabbing";
-}
-
-sliderContainer.addEventListener("mousedown", mousedownEvent);
-sliderContainer.addEventListener("touchstart", mousedownEvent);
 
 renderData();
