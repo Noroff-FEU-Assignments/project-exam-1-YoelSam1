@@ -56,8 +56,7 @@ nav ul li a:hover::before {
   transform-origin: left;
 }
 ul a.active {
-  color: red;
-  font-weight: bold;
+  border-bottom: 2px solid red;
 }
 
 /* footer style */
