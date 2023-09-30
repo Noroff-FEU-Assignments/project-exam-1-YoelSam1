@@ -43,6 +43,7 @@ h1 {
 .inner-slider {
   display: flex;
   gap: 10px;
+  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -195,6 +196,19 @@ form input {
 }
 /* x contact page Style x*/
 
+/* x About page Style x*/
+
+.bold-text {
+  font-weight: bold;
+}
+.p-text {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 24px;
+}
+
+/* x About page Style x*/
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -214,8 +228,8 @@ form input {
 .modal-content {
   margin: auto;
   display: block;
-  width: 75%;
-  max-width: 75%;
+  width: 90%;
+  max-width: 95%;
 }
 
 /* Add Animation */

@@ -70,6 +70,28 @@ let x;
 
 innerSlider.style.left = `-1500px`;
 
+sliderContainer.addEventListener("touchstart", (e) => {
+  pressed = true;
+  startX = e.touches[0].clientX - innerSlider.offsetLeft;
+});
+
+sliderContainer.addEventListener("touchend", () => {
+  pressed = false;
+});
+
+sliderContainer.addEventListener("touchmove", (e) => {
+  if (!pressed) return;
+  e.preventDefault();
+
+  // Handle touchmove event here (equivalent to mousemove)
+  // You can access touch positions via event.touches
+  x = e.touches[0].clientX;
+
+  innerSlider.style.left = `${x - startX}px`;
+
+  checkBoundary();
+});
+
 sliderContainer.addEventListener("mousedown", (e) => {
   pressed = true;
   startX = e.offsetX - innerSlider.offsetLeft;
@@ -114,12 +136,3 @@ const checkBoundary = () => {
 };
 
 renderData();
-
-function mousedownEvent(e) {
-  pressed = true;
-  startX = e.offsetX - innerSlider.offsetLeft;
-  sliderContainer.style.cursor = "grabbing";
-}
-
-sliderContainer.addEventListener("mousedown", mousedownEvent);
-sliderContainer.addEventListener("touchstart", mousedownEvent);
