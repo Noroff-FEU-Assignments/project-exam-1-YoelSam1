@@ -1,5 +1,5 @@
-const BASE_URL = "https://www.flyingtips.no/wp-json/wp/v2/posts?per_page=12";
 import myExports from "./navstyle.js";
+const BASE_URL = "https://www.flyingtips.no/wp-json/wp/v2/posts?per_page=12";
 
 async function fetchData() {
   try {

@@ -412,10 +412,6 @@ form input {
   .card {
     width: 100%;
   }
-  .imgCon {
-  }
-  .imgCon img {
-  }
 }
 
 @media only screen and (max-width: 943px) {
