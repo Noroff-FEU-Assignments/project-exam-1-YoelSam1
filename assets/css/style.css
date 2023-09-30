@@ -59,10 +59,11 @@ h1 {
   min-width: 400px;
   height: 500px;
 }
-.imgCon {
+.imgConn {
   height: 250px;
+  z-index: -2;
 }
-.imgCon img {
+.imgConn img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -195,19 +196,6 @@ form input {
   color: white;
 }
 /* x contact page Style x*/
-
-/* x About page Style x*/
-
-.bold-text {
-  font-weight: bold;
-}
-.p-text {
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 24px;
-}
-
-/* x About page Style x*/
 
 /* The Modal (background) */
 .modal {

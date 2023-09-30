@@ -1,4 +1,5 @@
 const BASE_URL = "https://www.flyingtips.no/wp-json/wp/v2/posts?per_page=12";
+import myExports from "./navstyle.js";
 
 async function fetchData() {
   try {
@@ -27,7 +28,7 @@ function render(data, container) {
     if (container) {
       container.innerHTML += `
             <div class="card">
-              <a product_id="${id}" class="imgCon">
+              <a product_id="${id}" class="imgConn">
                   <img src="${imageUrl}" alt="" /> 
               </a>
               <div class="detail">

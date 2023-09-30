@@ -55,6 +55,10 @@ nav ul li a:hover::before {
   transform: scalex(1);
   transform-origin: left;
 }
+ul a.active {
+  color: red;
+  font-weight: bold;
+}
 
 /* footer style */
 footer {
@@ -123,6 +127,7 @@ f {
     clear: both;
     max-width: 0;
     transition: max-height 0.2s ease-out;
+    z-index: 99;
   }
   .menu-icon {
     padding: 38px 20px;
