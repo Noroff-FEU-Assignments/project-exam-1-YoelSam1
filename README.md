@@ -76,7 +76,7 @@ In this project, I decided to use the Software Development Life Cycle (SDLC) sta
 
 I did only the level 1 process because it took me a long time with research to figure out how to implement the slider on the home page I had a slider on the desktop plus the phone, also on the blog page where It says to add modal and loader for more blog post. so overall I worked a lot on them and did not have more time left for the level 2 option.
 
-I chose this design because I like to travel, and I know I few tricks and it added to the idea I had. The design was very simple but I wanted to focus on what I had been asked to do and not what I wanted but I tried my best to style it so I looked welcoming.
+I chose this design because I like to travel, and I know I few tricks and it added to the idea I had. The design was very simple but I wanted to focus on what I had been asked to do and not what I wanted but I tried my best to style it so I looked welcoming. The website follows WCAG and SEO guidelines error-free.
 
 Overall, the blog post has 12 blogs, that is because I want to save time and focus on other stuff fast. I didn’t know what to write on the About page, so I just got information on what the site stands for. I did use <P> text on the home page and <img> that I did not fetch but just added through vsc for style, but all the content is fetched from WordPress with JavaScript. I added animation for the slider on the Figma that looks like the slider on the website, even the nav bar looks alike.
 
