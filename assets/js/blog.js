@@ -53,7 +53,7 @@ function render(data) {
       content.rendered.split("strong")[1].slice(1, 100) + "...";
     const br = document.createElement("br"); // <br> element
     const a = document.createElement("a"); // <a> element
-    a.innerHTML = "readMore"; // <a>readMore</a>
+    a.innerHTML = "ReadMore"; // <a>readMore</a>
     a.classList.add("readMore"); // add readmore class to <a></a>
     a.href = `blogspecific.html?id=${id}`; // add href to <a></a>
     detail.appendChild(h3); // put h3 inside detail div
