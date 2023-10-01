@@ -69,3 +69,17 @@ Note that this is an exam, and therefore tutor support will be limited as per th
 1. You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for.
 2. Post the data from the contact form to WordPress so you have the details saved.
 3. Allow users to submit comments on a blog post, and post this data to WordPress
+
+Summary report on the project
+
+In this project, I decided to use the Software Development Life Cycle (SDLC) starting with planning with the Trello card and making sure what I would be working on step by step, so the way I built the card was planning, designing, testing, and deploying. This will clear the production to a high quality and estimated time, which will be shown in the Trello plan. That I will first add all the requirements and follow how long I need to work with it or how I expected to be done.
+
+I did only the level 1 process because it took me a long time with research to figure out how to implement the slider on the home page I had a slider on the desktop plus the phone, also on the blog page where It says to add modal and loader for more blog post. so overall I worked a lot on them and did not have more time left for the level 2 option.
+
+I chose this design because I like to travel, and I know I few tricks and it added to the idea I had. The design was very simple but I wanted to focus on what I had been asked to do and not what I wanted but I tried my best to style it so I looked welcoming.
+
+Overall, the blog post has 12 blogs, that is because I want to save time and focus on other stuff fast. I didn’t know what to write on the About page, so I just got information on what the site stands for. I did use <P> text on the home page and <img> that I did not fetch but just added through vsc for style, but all the content is fetched from WordPress with JavaScript. I added animation for the slider on the Figma that looks like the slider on the website, even the nav bar looks alike.
+
+What I learned through this project is that JavaScript is cool but very hard for a beginner like me so I learned that I will start on the hard part first and then go on the easy part after, what I did not do in this project was I thought I could do the Research and figure it out but it took me so long with research and understanding the code that I am trying work. I have never created a blog, so I learned that blog websites are not the same as an e-commerce website.
+
+I did a recording Hotjar test on my blog site, and I got feedback saying the website looked very complete and that they found it easy to use. From the insight of the record, I couldn’t see a problem or issue when the user was testing it and clicking different pages and opening the link, so I didn’t make any changes and the website match like 90% from the Figma design style. Also, I have the recording link under, and all the others links there also.
