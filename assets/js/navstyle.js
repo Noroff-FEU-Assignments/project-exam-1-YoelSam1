@@ -12,5 +12,3 @@ for (const link of navLinks) {
     link.classList.add("active");
   }
 }
-
-export default { currentURL, navLinks };
