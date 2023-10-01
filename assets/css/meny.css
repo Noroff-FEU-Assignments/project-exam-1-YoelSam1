@@ -56,8 +56,13 @@ nav ul li a:hover::before {
   transform-origin: left;
 }
 nav a.active {
-  color: #ff0000; /* Active link color */
-  font-weight: bold; /* Bold text for the active link */
+  color: #ff0000;
+  font-weight: bold;
+}
+
+nav a.active1 {
+  color: #ff0000;
+  font-weight: bold;
 }
 
 /* footer style */
