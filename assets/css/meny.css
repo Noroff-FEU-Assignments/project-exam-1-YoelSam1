@@ -55,8 +55,9 @@ nav ul li a:hover::before {
   transform: scalex(1);
   transform-origin: left;
 }
-ul a.active {
-  border-bottom: 2px solid red;
+nav a.active {
+  color: #ff6600; /* Active link color */
+  font-weight: bold; /* Bold text for the active link */
 }
 
 /* footer style */
