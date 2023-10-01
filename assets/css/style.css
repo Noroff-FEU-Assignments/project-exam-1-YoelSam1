@@ -218,8 +218,10 @@ form input {
 }
 
 .submit {
-  background-color: #448f0b;
+  background-color: #61cc0f;
   color: white;
+  font-weight: bold;
+  font-size: 15px;
 }
 /* x contact page Style x*/
 
