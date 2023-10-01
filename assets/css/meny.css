@@ -56,12 +56,12 @@ nav ul li a:hover::before {
   transform-origin: left;
 }
 nav a.active {
-  color: #ff0000;
+  color: #ff6600;
   font-weight: bold;
 }
 
 nav a.active1 {
-  color: #ff0000;
+  color: #ff6600;
   font-weight: bold;
 }
 
