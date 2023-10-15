@@ -38,6 +38,7 @@ In summary, the "Flying Tips Blog Website" is a versatile and dynamic resource t
 
 - HTML
 - CSS
+- Javascript
 
 ### Installing
 
