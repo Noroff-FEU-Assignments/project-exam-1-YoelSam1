@@ -42,7 +42,7 @@ In summary, the "Flying Tips Blog Website" is a versatile and dynamic resource t
 ### Installing
 
 ```bash
-git https://github.com/Noroff-FEU-Assignments/project-exam-1-YoelSam1.git
+https://github.com/Noroff-FEU-Assignments/project-exam-1-YoelSam1.git
 ```
 
 2. Website Live Demo:
