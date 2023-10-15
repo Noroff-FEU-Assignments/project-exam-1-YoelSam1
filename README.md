@@ -34,11 +34,12 @@ In summary, the "Flying Tips Blog Website" is a versatile and dynamic resource t
 
 - The project encourages community interaction by providing features for user-generated content.
 
-## Built With programing languages
+## Built With Frontend Tools
 
 - HTML
 - CSS
 - Javascript
+- Figma
 
 ### Installing
 
