@@ -131,7 +131,7 @@ Note that this is an exam, and therefore tutor support will be limited as per th
 2. Post the data from the contact form to WordPress so you have the details saved.
 3. Allow users to submit comments on a blog post, and post this data to WordPress
 
-Summary report on the project
+## Summary report on the project
 
 In this project, I decided to use the Software Development Life Cycle (SDLC) starting with planning with the Trello card and making sure what I would be working on step by step, so the way I built the card was planning, designing, testing, and deploying. This will clear the production to a high quality and estimated time, which will be shown in the Trello plan. That I will first add all the requirements and follow how long I need to work with it or how I expected to be done.
 
